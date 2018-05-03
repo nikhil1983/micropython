@@ -69,7 +69,7 @@ void STM32F7DISC_board_early_init(void);
 // USB config (CN13 - USB OTG FS)
 // The Hardware VBUS detect only works on pin PA9. The STM32F7 Discovery uses
 // PA9 for VCP_TX functionality and connects the VBUS to pin J12 (so software
-// only detect). So we don't define the VBUS detect pin since that requires PA9.
+// only detect). So we don't define the VBUS detect pin since that require PA9.
 #define MICROPY_HW_USB_FS              (1)
 /*#define MICROPY_HW_USB_VBUS_DETECT_PIN (pin_J12)*/
 #define MICROPY_HW_USB_OTG_ID_PIN      (pin_A10)
