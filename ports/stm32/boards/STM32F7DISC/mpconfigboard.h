@@ -46,9 +46,9 @@ void STM32F7DISC_board_early_init(void);
 
 // SPI
 #define MICROPY_HW_SPI2_NSS         (pin_I0)
-#define MICROPY_HW_SPI2_SCK         (pin_I1)
-#define MICROPY_HW_SPI2_MISO        (pin_B14)
-#define MICROPY_HW_SPI2_MOSI        (pin_B15)
+#define MICROPY_HW_SPI2_SCK         (pin_B10)
+#define MICROPY_HW_SPI2_MISO        (pin_C2)
+#define MICROPY_HW_SPI2_MOSI        (pin_C3)
 
 // USRSW is pulled low. Pressing the button makes the input go high.
 #define MICROPY_HW_USRSW_PIN        (pin_I11)
@@ -62,7 +62,7 @@ void STM32F7DISC_board_early_init(void);
 #define MICROPY_HW_LED_OFF(pin)     (mp_hal_pin_low(pin))
 
 // SD card detect switch
-#define MICROPY_HW_SDCARD_DETECT_PIN        (pin_C13)
+#define MICROPY_HW_SDCARD_DETECT_PIN        (pin_B15)
 #define MICROPY_HW_SDCARD_DETECT_PULL       (GPIO_PULLUP)
 #define MICROPY_HW_SDCARD_DETECT_PRESENT    (GPIO_PIN_RESET)
 
